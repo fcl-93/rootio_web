@@ -44,6 +44,12 @@
                     {% trans %} Manage Users {% endtrans %}</a>
             </div>
             <div class="span4"></div>
+            <div class="span4">
+                <a class="btn btn-large   btn-block btn-success" href="{{ url_for('content.index') }}">
+                    <i class="icon-user icon-white"></i>
+                    {% trans %} Manage Content {% endtrans %}</a>
+            </div>
+            <div class="span4"></div>
         </div>
 
     {%else%}

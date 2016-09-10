@@ -1,0 +1,13 @@
+{% extends "layouts/base.html" %}
+
+{% set page_header = _(active|capitalize) %}
+{% set page_title = page_header %}
+
+{% set tab_title = "Radio" %}
+{% set tabs = [
+    (_("Status"), url_for('content.index')), 
+    (_("Tracks"), url_for('content.tracks')),
+    (_("Uploads"), url_for('content.content_uploads')),
+    (_("News"), url_for('content.content_news')),  
+]%}
+ 
